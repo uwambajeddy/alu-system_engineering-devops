@@ -3,7 +3,7 @@
 # and refuse password authentication for a specific server.
 
 # Host directive for your specific server
-Host your_server_ip_or_hostname
+Host ubuntu
     # Use the private key ~/.ssh/school
     IdentityFile ~/.ssh/school
 
