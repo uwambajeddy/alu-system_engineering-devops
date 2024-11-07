@@ -11,12 +11,12 @@ apt-get -y install haproxy
 echo "ENABLED=1" >> /etc/default/haproxy
 
 # Configure HAProxy
-printf %s "listen 5452-webs
+printf %s "listen 6287-webs
     bind *:80
     mode http
     balance roundrobin
-    server 5487-web-01 54.226.182.255:80 check
-    server 5780-web-02 52.200.5.159:80 check
+    server 6287-web-01 54.237.196.178:80 check
+    server 6287-web-02 107.21.80.231:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 # Restart HAProxy service
